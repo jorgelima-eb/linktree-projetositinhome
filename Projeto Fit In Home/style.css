@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #38f709;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+:root {
+    --bgcolor : black;
+    --accentcolor: #9b1212;
+}
+h1{
+    color: white;
+}
+
+p{
+    color: black;
+}
+body {
+    background: rgb(1,1,1);
+    background: linear-gradient(180deg, rgba(1,1,1,1) 35%, rgba(254,254,254,1) 68%);
+}
+
+.link-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 40px auto;
+    gap: 20px;
+}
+.link-tree img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.link-tree h1 {
+    font-size: 2.5rem;
+}
+
+.link-tree a {
+    background-color: var(--accentcolor);
+    color: var(--bgcolor);
+    width: 100%;
+    padding: 17px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 2px var(--accentcolor);
+    transition: all 0.5s linear;
+}
+
+.link-tree a:hover {
+    background-color: var(--bgcolor);
+    color: var(--accentcolor);
+}
+.whatsapp {
+    color: seagreen;
+    height:max-content
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bgcolor);
+}
+.jorlly{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 40px;
+    background: black;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white ;
+    margin: 0 50px;
+}
+
+@media (min-width: 300px) and (max-width:400px){
+    .link-tree {
+        font-size: 1.5rem;
+        width: 95vw;
+    }
+    .link-tree h1 {
+        width: max-content;
+       font-size:40px;
+
+    }
+
+    .whatsapp {
+        color: seagreen;
+        height:max-content
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--bgcolor);
+        width: max-content;
+    }
+    .jorlly{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 40px;
+        background: black;
+    }
+    .texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white ;
+        margin: 0 0 1px;
+        font-size: 13px;
+    }
+    p{
+        color: white;
+}
+}
